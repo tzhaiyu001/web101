@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="102px" height="70px" viewBox="0 0 102 70" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="gradient_1">
+      <stop offset="0" stop-color="#F27701" />
+      <stop offset="1" stop-color="#FABB02" />
+    </linearGradient>
+    <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="gradient_2">
+      <stop offset="0" stop-color="#DEA60F" />
+      <stop offset="1" stop-color="#FFE457" />
+    </linearGradient>
+    <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="gradient_3">
+      <stop offset="0" stop-color="#E0A912" />
+      <stop offset="1" stop-color="#FDE053" />
+    </linearGradient>
+    <path d="M50.692 65.5396C78.6884 65.5396 101.384 50.8681 101.384 32.7698C101.384 14.6715 78.6884 0 50.692 0C22.6956 0 0 14.6715 0 32.7698C0 50.8681 22.6956 65.5396 50.692 65.5396Z" transform="translate(0 3.6410906)" id="path_1" />
+    <path d="M38.019 43.6931C59.0163 43.6931 76.038 33.9121 76.038 21.8465C76.038 9.78103 59.0163 0 38.019 0C17.0217 0 0 9.78103 0 21.8465C0 33.9121 17.0217 43.6931 38.019 43.6931Z" transform="translate(12.672994 12.743817)" id="path_2" />
+    <path d="M38.019 43.6931C59.0163 43.6931 76.038 33.9121 76.038 21.8465C76.038 9.78103 59.0163 0 38.019 0C17.0217 0 0 9.78103 0 21.8465C0 33.9121 17.0217 43.6931 38.019 43.6931Z" transform="translate(12.672994 0)" id="path_3" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+    <clipPath id="clip_2">
+      <use xlink:href="#path_2" />
+    </clipPath>
+    <clipPath id="clip_3">
+      <use xlink:href="#path_3" />
+    </clipPath>
+  </defs>
+  <g id="编组-37">
+    <g id="编组-18">
+      <g id="编组-2">
+        <g id="椭圆形">
+          <g clip-path="url(#clip_1)">
+            <use xlink:href="#path_1" fill="none" stroke="url(#gradient_1)" stroke-opacity="0.5" stroke-width="5.0526314" />
+          </g>
+        </g>
+        <g id="椭圆形">
+          <g clip-path="url(#clip_2)">
+            <use xlink:href="#path_2" fill="none" stroke="url(#gradient_1)" stroke-opacity="0.5" stroke-width="10.105263" />
+          </g>
+        </g>
+        <g id="椭圆形">
+          <g clip-path="url(#clip_3)">
+            <use xlink:href="#path_3" fill="none" stroke="url(#gradient_2)" stroke-width="10.105263" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <path d="M19.7568 10.2277C19.7349 10.2502 19.713 10.2954 19.6692 10.318L5.70278 23.6839C5.61522 23.7516 5.52765 23.8194 5.4182 23.8645C5.1774 23.9548 4.95849 24 4.73958 24C4.38932 24 4.10474 23.8871 3.90772 23.6613C3.57935 23.3452 3.62314 22.9389 3.64503 22.826C3.64503 22.7808 3.66692 22.7357 3.68881 22.6905L6.75355 14.6754L1.17134 14.6754C0.514615 14.6754 0.230032 14.3594 0.120577 14.1787C-0.0983331 13.8175 0.0111219 13.4337 0.208141 13.1853C0.230032 13.1627 0.230032 13.1402 0.251923 13.1176L12.1606 0.361242C12.2263 0.293509 12.292 0.248354 12.3795 0.203198C12.4671 0.158043 12.8174 0 13.1895 0C13.5398 0 13.8243 0.112888 14.0433 0.338664C14.2841 0.587018 14.3935 0.94826 14.3497 1.39981L14.3497 1.46754L12.7517 8.62465L18.9468 8.6698L19.0125 8.6698C19.6036 8.71496 19.8444 9.05362 19.9319 9.18909C20.1289 9.64064 19.8444 10.0922 19.7568 10.2277L19.7568 10.2277Z" transform="translate(41 11)" id="路径" fill="url(#gradient_3)" stroke="none" />
+  </g>
+</svg>

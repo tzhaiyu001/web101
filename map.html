@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <title>地图展示</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <style>
+    body,
+    html,
+    #container {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      font-family: "微软雅黑";
+    }
+
+    .info {
+      z-index: 999;
+      width: auto;
+      min-width: 22rem;
+      padding: .75rem 1.25rem;
+      margin-left: 1.25rem;
+      position: fixed;
+      top: 1rem;
+      background-color: #fff;
+      border-radius: .25rem;
+      font-size: 14px;
+      color: #666;
+      box-shadow: 0 2px 6px 0 rgba(27, 142, 236, 0.5);
+    }
+
+    .biaoti {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 999;
+      width: auto;
+      min-width: 22rem;
+      padding-top: 0.75rem;
+      padding-right: 0rem;
+      padding-left: 0rem;
+      padding-bottom: .75rem;
+      position: fixed;
+      /* [disabled]top: 0rem; */
+      background-color: #0E1B5C;
+      border-radius: .25rem;
+      font-size: 26px;
+      color: #F4F1F1;
+      box-shadow: 0 2px 6px 0 rgba(27, 142, 236, 0.5);
+      opacity: 0.5;
+      text-align: center;
+      float: none;
+      display: inherit;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      margin-top: -2px;
+      margin-left: 100px;
+      margin-right: 100px;
+      /* [disabled]left: 7px; */
+    }
+
+    .newbtn {
+      z-index: 999;
+      opacity: 0.8;
+      width: auto;
+      min-width: 22rem;
+      padding: .75rem 1.25rem;
+      margin-left: 1.25rem;
+      position: fixed;
+      background-color: #0E1B5C;
+      border-radius: .25rem;
+      font-size: 14px;
+      box-shadow: 0 2px 6px 0 rgba(27, 142, 236, 0.5);
+      margin-top: -720px;
+    }
+  </style>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/wtmApi.js"></script>
+  <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://api.map.baidu.com/api?type=webgl&v=1.0&ak=Yfo39mUmjFiZIlPosW6dI6TSmgEYAXqH"></script>
+  <!-- 接入MapV Three -->
+  <script src="https://unpkg.com/mapv-three@1.0.1/dist/mapvthree.umd.js"></script>
+
+</head>
+
+<body>
+
+    <!--<div class="biaoti" onclick="fun201"><strong>枣 庄 市 警 保 联 控 指 挥 平 台</strong><button>abccc</button></div>-->
+    <button class="biaoti">abccc</button> <button style="position:absolute; margin-top:-300px;">abccc</button>
+    <div id="container" style="top:0"></div>
+    <div class=" newbtn btn-group-vertical" role="group" aria-label="Vertical button group">
+        <div class="btn-group" role="group" style="color: #0E1B5C">
+            <button id="btnDropOne1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="background: #0E1B5C;color: aliceblue">
+                系统菜单<span class="caret"></span>
+            </button>
+            <ul class=" dropdown-menu" aria-labelledby="btnDropOne1">
+                <li><a href="#" onclick="f100(0)">地图颜色1</a></li>
+                <li><a href="#" onclick="f100(1)">地图颜色2</a></li>
+                <li><a href="#" onclick="f101()">地图视角</a></li>
+                <li><a href="#" onclick="f102()">地图视角</a></li>
+                <li><a href="#" onclick="f103()">复位</a></li>
+                <li><a href="#" onclick="f201()">空</a></li>
+            </ul>
+        </div>
+        <div class="btn-group" role="group" style="color: #0E1B5C">
+            <button id="btnDropOne1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="background: #0E1B5C;color: aliceblue">
+                区域选择<span class="caret"></span>
+            </button>
+            <ul class=" dropdown-menu" aria-labelledby="btnDropOne1">
+                <li><a href="#" onclick="f201('薛城区')">薛城区</a></li>
+                <li><a href="#" onclick="f201('新城区')">新城区</a></li>
+                <li><a href="#" onclick="f201('峄城区')">峄城区</a></li>
+                <li><a href="#" onclick="f201('山亭区')">山亭区</a></li>
+                <li><a href="#" onclick="f201('市中区')">市中区</a></li>
+                <li><a href="#" onclick="f201('台儿庄区')">台儿庄区</a></li>
+                <li><a href="#" onclick="f201('滕州市')">滕州市</a></li>
+            </ul>
+        </div>
+
+        <div class="btn-group" role="group" style="color: #0E1B5C">
+            <button id="btnDropOne1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="background: #0E1B5C;color: aliceblue">
+                单位类型<span class="caret"></span>
+            </button>
+            <ul class=" dropdown-menu" aria-labelledby="btnDropOne1">
+                <li><a href="#" onclick="f202('xuexiao')">学校单位</a></li>
+                <li><a href="#" onclick="f202('yiyuan')">医院单位</a></li>
+                <li><a href="#" onclick="f202('jinrong')">金融单位</a></li>
+                <li><a href="#" onclick="f202('zhongdian')">重点单位</a></li>
+                <li><a href="#" onclick="f202('bazxd')">保安驻巡点</a></li>
+                <li><a href="#" onclick="f202('jiayouzhan')">加油站</a></li>
+                <li><a href="#" onclick="f202('zhengfu')">政府机关</a></li>
+                <li><a href="#" onclick="f202('qiye')">企业</a></li>
+                <li><a href="#" onclick="f202('qita')">其他</a></li>
+            </ul>
+        </div>
+        <div class="btn-group" role="group" style="color: #0E1B5C">
+            <button id="btnDropOne1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="background: #0E1B5C;color: aliceblue">
+                机动单元<span class="caret"></span>
+            </button>
+            <ul class=" dropdown-menu" aria-labelledby="btnDropOne1">
+                <li><a href="#">巡逻车辆</a></li>
+                <li><a href="#">押运车辆</a></li>
+                <li><a href="#">指挥车辆</a></li>
+                <li><a href="#">单兵设备</a></li>
+                <li><a href="#">巡逻机器人</a></li>
+                <li><a href="#">无人机</a></li>
+            </ul>
+        </div>
+        <div class="btn-group" role="group" style="color: #0E1B5C">
+            <button id="btnDropOne1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="background: #0E1B5C;color: aliceblue">
+                系统菜单<span class="caret"></span>
+            </button>
+            <ul class=" dropdown-menu" aria-labelledby="btnDropOne1">
+                <li><a href="\">管理后台</a></li>
+                <li><a href="#">内保管理</a></li>
+                <li><a href="#">安保管理</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+  var map = new BMapGL.Map('container', {
+    enableRotate: true,
+    enableTilt: true
+  }); // 创建Map实例
+  map.centerAndZoom(new BMapGL.Point(117.339549, 34.8112), 15); // 初始化地图,设置中心点坐标和地图级别
+    map.enableScrollWheelZoom(); // 允许滚轮缩放
+
+    //let btn = document.createElement("button");
+    //btn.style.position = "absolute";
+    //btn.style.marginTop = "-300px";
+    //btn.style.width = "50px";
+    //btn.style.height = "50px";
+    //document.body.appendChild(btn);
+
+  let f100 = function (i) {
+    var a = new Array(
+      "56e05537dc30e93100369fc954f06009",//亮
+      "43558c5648da7ed7a1019bf5352036a3",//暗
+      "cb8ad83d9acb3fee99e89893e575772f",
+      "6629fab2ce37c82a23ca2a27ebac432d");
+    map.setMapStyleV2({ styleId: a[i] });
+  }
+ 
+  let f101 = function () {
+    map.setHeading(45);   //设置地图旋转角度 
+    map.setTilt(73);       //设置地图的倾斜角度
+  }
+  let f102 = function () {
+    map.setHeading(0);   //设置地图旋转角度 
+    map.setTilt(0);       //设置地图的倾斜角度
+  }
+  let f103 = function () {
+    location.reload();
+  }
+
+  var url_DwSearch = "http://60.214.131.142:3301/api/Dw/Search";
+  var data_DwSearch = {
+    // "Page": 0,
+    // "Limit": 0,
+    // "IsPlainText": true,
+    // "IsEnumToString": true,
+    // "SortInfo": {
+    //   "Property": "string",
+    //   "Direction": "Asc"
+    // },
+    "Dwqy": "新城区",
+    "Dwlx": "zhengfu"
+    // "Dwbm": "string",
+    // "Dwdz": "string",
+    // "Dwdh": "string",
+    // "Dwfzr": "string",
+    // "Dwfzrdh": "string"
+  }
+
+  //{"Code":200,"Count":1,"Data":[{"Dwqy":"新城区","Dwmc":"枣庄市人民政府","Dwbm":"100000001","Dwlx":"zhengfu","Dwdz":"单位的地址","Dwdh":"1234567","Dwfzr":"负责人","Dwfzrdh":"138632000000","Jwd":"117.330325,34.816735","PhotoId":"cd829c61-52a2-4aea-30d6-08da9125dd1b","Mx3DId":"d8c956d9-0744-434b-30d7-08da9125dd1b","Remark":"备注","TempIsSelected":"0","ID":"8f40f7dc-9f85-437b-53d0-08da9125df11","LAY_CHECKED":false}],"Msg":"success","Page":1,"PageCount":1}
+ 
+  let f201 = function (qy) // 区域选择
+  {
+    data_DwSearch.Dwqy = qy;
+    if (qy == "新城区") { qy = "枣庄市"; }  //新城区没有数据
+    map.centerAndZoom(qy); // 初始化地图,设置中心点坐标和地图级别
+    //cx();
+  }
+  let f202 = function (indata) // 类型选择
+  {
+    data_DwSearch.Dwlx = indata;
+    cx();
+  }
+  //查询点位信息
+  let cx = function () {
+    runApi(url_DwSearch, data_DwSearch, runApi_infun);// 函数作为参数传入
+  }
+  let runApi_infun = function (data) {
+    //alert(data.Count);
+    var i = 0;
+    data.Data.forEach(element => {
+      if (element.Jwd != null) {
+        i++;
+        var jingdu = element.Jwd.split(",")[0];
+        var weidu = element.Jwd.split(",")[1];
+        var point = new BMapGL.Point(jingdu, weidu);
+        var marker = new BMapGL.Marker(point);
+        map.addOverlay(marker);
+        var label = new BMapGL.Label(element.Dwmc, { offset: new BMapGL.Size(20, -10) });
+        marker.setLabel(label);
+        marker.addEventListener("click", function () {
+            //map.centerAndZoom(point, 25);
+            //alert(element.PhotoId);
+            var imgpath="http://60.214.131.142:3301"+"/file/error.png";
+
+            $.get(url_GetfileInfo+element.PhotoId, function (result) {
+                var str = JSON.stringify(result);
+                var json = eval('(' + str + ')');
+                if (typeof(result) != "undefined")
+                imgpath = "http://60.214.131.142:3301"+json.Path;
+                var sContent =
+                    "<div style='opacity: 1;'>" +
+                      "<div style='float:right;margin-right: 3%; margin-top: 3%;'>" +
+                        "<img src='" + imgpath + "' style='width:200px;height:150px;'>" +
+                      "</div>" +
+                      "<div style='float: left;margin-left: 3%; margin-top: 3%;width:200px;'>" +
+                        "<p>单位地址：" + element.Dwdz + "</p>" +
+                        "<p>单位电话：" + element.Dwdh + "</p>" +
+                        "<p>单位负责人：" + element.Dwfzr + "</p>" +
+                        "<p>负责人电话：" + element.Dwfzrdh + "</p>" +
+                       "</div>"+
+                    "</div>";
+                 //var sContent = "<iframe id='ifram1' src='https://www.thingjs.com/pp/a188f3d8d8f4e6a0c9170725' width='800' height='600' frameborder='0'></iframe>";
+                 var infoWindow = new BMapGL.InfoWindow(sContent, { width: 450, height: 200, title: element.Dwmc });  // 创建信息窗口对象
+                // infoWindow.title = element.Dwmc;
+                map.openInfoWindow(infoWindow, point); //开启信息窗口
+                document.getElementById('imgDemo').onload = function () {
+                    infoWindow.redraw(); // 防止在网速较慢时生成的信息框高度比图片总高度小，导致图片部分被隐藏
+                }
+
+            });
+            
+        }); 
+
+          // photo  "ID": "bee420e3-ca89-43eb-dc81-08da8bb6fc96"
+     
+
+
+      }
+    });
+  }
+
+  // window.open('t3d.html', "newwindow",
+  //   "width=1024,height=768, top=100,left=200,toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");
+
+  // 创建图文信息窗口
+  // var sContent = ` <iframe src="https://www.thingjs.com/pp/a188f3d8d8f4e6a0c9170725" width="800" height="600" frameborder="0"></iframe>`;
+  // var infoWindow = new BMapGL.InfoWindow(sContent);
+  // // marker添加点击事件
+  // marker1.addEventListener('click', function () {
+  //     this.openInfoWindow(infoWindow);
+  //     // 图片加载完毕重绘infoWindow
+  //     // document.getElementById('imgDemo').onload = function () {
+  //     //     infoWindow.redraw(); // 防止在网速较慢时生成的信息框高度比图片总高度小，导致图片部分被隐藏
+  //     // };
+  // });
+
+  function DisplayOptions(bool) { poi: bool };
+
+  function showText() {
+    map.setDisplayOptions({
+      poiText: true
+    })
+  }
+  function showIcon() {
+    map.setDisplayOptions({
+      poiIcon: true
+    })
+  }
+  cx();
+</script>

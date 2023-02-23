@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="0.38081908" y1="0.08804582" x2="0" y2="1.418922" id="gradient_1">
+      <stop offset="0" stop-color="#12FEE0" />
+      <stop offset="1" stop-color="#026DB2" />
+    </linearGradient>
+    <linearGradient x1="0.8277646" y1="0.14982508" x2="0" y2="1.8981408" id="gradient_2">
+      <stop offset="0" stop-color="#12FEE0" />
+      <stop offset="1" stop-color="#026DB2" />
+    </linearGradient>
+    <linearGradient x1="0.6115809" y1="1.2485352" x2="0.6115809" y2="-0.1921875" id="gradient_3">
+      <stop offset="0" stop-color="#12FEE0" />
+      <stop offset="1" stop-color="#026DB2" />
+    </linearGradient>
+    <linearGradient x1="1" y1="0.5" x2="0" y2="1.4173361" id="gradient_4">
+      <stop offset="0" stop-color="#12FEE0" />
+      <stop offset="1" stop-color="#026DB2" />
+    </linearGradient>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+      <feGaussianBlur stdDeviation="1.7333333" result="effect0_gaussianBlur" />
+    </filter>
+    <path d="M0 0L63 0L63 63L0 63L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="webicon-餐饮">
+    <g id="编组-17" transform="translate(-0.5 -0.5)">
+      <path d="M0 0L63 0L63 63L0 63L0 0Z" id="蒙版" fill="none" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#mask_1)">
+        <g id="编组-17" transform="translate(0.9625 11.900001)">
+          <path d="M26.5781 19.6C41.2568 19.6 53.1563 15.2124 53.1563 9.8C53.1563 4.38761 41.2568 0 26.5781 0C11.8994 0 0 4.38761 0 9.8C0 15.2124 11.8994 19.6 26.5781 19.6Z" transform="translate(1.88125 20.300001)" id="椭圆形" fill="#000000" fill-opacity="0.2" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" />
+          <g id="webicon-车辆" transform="translate(3.9375 0)">
+            <g id="编组-19">
+              <g id="编组-4">
+                <path d="M0 0C4.85189 0 9.17967 1.91877 11.9968 4.90777" transform="translate(42.534004 16.237387)" id="路径" fill="#AEBCC3" fill-rule="evenodd" stroke="none" />
+                <path d="M0 26.5077C0.657474 27.8152 1.94908 28.7 3.43909 28.7L51.1351 28.7C53.3137 28.7 55.0761 26.8172 55.0761 24.4942L55.0761 23.3087L52.8508 23.3087C52.3252 23.3209 51.8892 22.8558 51.8743 22.267L51.8743 17.3769C49.1525 15.4145 45.9843 14.3705 42.7475 14.3696L42.8447 14.3696L39.499 14.3522C36.2389 6.50708 29.9248 0 21.6149 0C13.3168 0 6.35688 6.11046 4.46226 14.3478L3.43909 14.3478C1.28382 14.3478 0.0272326 16.2132 0.0272326 18.5144" transform="translate(0 0.07946495)" id="路径" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+                <path d="M0 5.45247L0.836441 5.45247C1.46795 5.4664 2.07939 5.2405 2.53615 4.8245C2.99291 4.40849 3.25757 3.83649 3.27185 3.23439L3.27185 2.21437C3.27185 0.990346 2.18253 0 0.836441 0L0.0233425 0" transform="translate(0 19.509233)" id="路径" fill="#00A5C6" fill-rule="evenodd" stroke="none" />
+                <path d="M1.75372e-15 5.99839C0 9.3112 2.80764 11.9968 6.27104 11.9968C9.73444 11.9968 12.5421 9.3112 12.5421 5.99839C12.5421 2.68557 9.73444 0 6.27104 0C2.80764 0 0 2.68557 1.75372e-15 5.99839Z" transform="translate(5.9983854 20.599848)" id="路径" fill="url(#gradient_2)" fill-rule="evenodd" stroke="none" />
+                <path d="M0 2.45389C0 3.80913 1.22071 4.90777 2.72654 4.90777C4.23236 4.90777 5.45308 3.80913 5.45308 2.45389C5.45308 1.09864 4.23236 0 2.72654 0C1.22071 0 0 1.09864 0 2.45389L0 2.45389Z" transform="translate(9.270232 24.417004)" id="路径" fill="url(#gradient_3)" fill-rule="evenodd" stroke="none" />
+                <path d="M0 5.99839C0 9.3112 2.80764 11.9968 6.27104 11.9968C9.73444 11.9968 12.5421 9.3112 12.5421 5.99839C12.5421 2.68557 9.73444 0 6.27104 0C2.80764 0 0 2.68557 0 5.99839Z" transform="translate(35.445007 20.599848)" id="路径" fill="url(#gradient_2)" fill-rule="evenodd" stroke="none" />
+                <path d="M0 2.45389C0 3.80913 1.22071 4.90777 2.72654 4.90777C4.23237 4.90777 5.45308 3.80913 5.45308 2.45389C5.45308 1.09864 4.23237 0 2.72654 0C1.22071 0 0 1.09864 0 2.45389L0 2.45389Z" transform="translate(39.26216 24.417004)" id="路径" fill="url(#gradient_3)" fill-rule="evenodd" stroke="none" />
+                <path d="M2.99356 2.51619L2.99356 2.50417C2.10034 1.54999 1.09508 0.709069 0 0L0 4.49548C0 5.02436 0.449233 5.45308 0.997854 5.45308L3.27185 5.45308L3.27185 2.80467L2.99356 2.51619L2.99356 2.51619Z" transform="translate(51.804237 18.418617)" id="路径" fill="url(#gradient_4)" fill-rule="evenodd" stroke="none" />
+                <path d="M14 5.68434e-14C7.22127 0.519296 1.63781 6.29449 0 14L14 14L14 5.68434e-14ZM16.1 14L30.1 14C27.4365 6.84983 22.5313 0.858863 16.1 1.1191e-13L16.1 14Z" transform="translate(7 2.1000001)" id="形状" fill="url(#gradient_3)" stroke="none" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

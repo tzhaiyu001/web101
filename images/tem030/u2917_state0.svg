@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgb(255, 255, 255); display: block; z-index: 1; position: relative; shape-rendering: auto;" width="500" height="350" preserveAspectRatio="xMidYMid" viewBox="0 0 500 350">
+<g transform=""><linearGradient id="ldbk-nq4q5u6dq7r" x1="-0.1" y1="0" x2="1.1" y2="0.278783">
+  <animate attributeName="y2" repeatCount="indefinite" dur="1s" keyTimes="0;0.5;1" values="-0.32;0.32;-0.32" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" calcMode="spline"/>
+  <stop stop-color="#00EBBC" offset="0"/>
+  <stop stop-color="#0081DD" offset="1"/>
+</linearGradient>
+<rect x="0" y="0" width="500" height="350" fill="url(#ldbk-nq4q5u6dq7r)"/></g>
+<style type="text/css">.lded &gt; .content, .lded &gt; .content &gt; .inner { height: 100%; }
+.lded &gt; .content &gt; .inner &gt; .viewer { width: 100%; height: 100%; max-width: 100%; }
+.lded &gt; .content &gt; .inner &gt; .panel {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  opacity: 0.3;
+}
+.lded &gt; .content &gt; .inner &gt; .panel:hover { opacity: 1; }
+.lded &gt; .content &gt; .inner &gt; .ctrl {
+  position: absolute;
+  bottom: 13px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.lded &gt; .content &gt; .inner &gt; .ctrl:hover {
+  z-index: 10;
+}
+#editor &gt; .inner &gt; .title {
+  position: absolute;
+  bottom: 195px;
+  left: 0;
+  right: 0;
+  z-index: 11;
+}
+#editor &gt; .inner &gt; .title &gt; a:first-child {
+  margin-left: 0!important;
+#editor .lded .viewer { border-radius: 0 }</style></svg>

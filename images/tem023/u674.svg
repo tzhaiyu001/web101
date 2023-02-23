@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="0.7794356" y1="0.26449767" x2="0" y2="1.418922" id="gradient_1">
+      <stop offset="0" stop-color="#12FEE0" />
+      <stop offset="1" stop-color="#026DB2" />
+    </linearGradient>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+      <feGaussianBlur stdDeviation="3.1200001" result="effect0_gaussianBlur" />
+    </filter>
+    <path d="M0 0L63 0L63 63L0 63L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="webicon-餐饮">
+    <g id="编组-11" transform="translate(-0.5 -0.5)">
+      <path d="M0 0L63 0L63 63L0 63L0 0Z" id="蒙版" fill="none" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#mask_1)">
+        <g id="编组-11" transform="translate(7.7 4.9)">
+          <path d="M21.35 32.2C33.1413 32.2 42.7 24.9918 42.7 16.1C42.7 7.20822 33.1413 0 21.35 0C9.55872 0 0 7.20822 0 16.1C0 24.9918 9.55872 32.2 21.35 32.2Z" transform="translate(2.1000001 18.2)" id="椭圆形" fill="#000000" fill-opacity="0.3" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" />
+          <g id="webicon-家居备份-2">
+            <g id="家居">
+              <g id="编组" transform="translate(0.35 0.35)">
+                <g id="形状-2">
+                  <path d="M46.8518 20.3575L24.4632 0.315563C23.9896 -0.105188 23.2577 -0.105188 22.7841 0.315563L0.395469 20.3575C-0.422575 21.0923 0.112537 22.4139 1.23197 22.4139L3.84602 22.4139L3.84602 46.0529C3.84602 46.7107 4.40573 47.25 5.08846 47.25L41.962 47.25C42.6447 47.25 43.2044 46.7107 43.2044 46.0529L43.2044 22.4139L46.0153 22.4139C47.1347 22.4139 47.676 21.0923 46.8518 20.3575Z" transform="matrix(1 0 0 1 -5.551115E-17 1.9737299E-17)" id="形状" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+                </g>
+                <g id="编组-44" transform="translate(12.25 24.5)">
+                  <path d="M0 0L5.25 0L5.25 5.25L0 5.25L0 0Z" transform="matrix(1 0 0 1 -1.9085967E-13 -1.9085967E-13)" id="矩形" fill="#058AA7" fill-rule="evenodd" stroke="none" />
+                  <path d="M0 0L5.25 0L5.25 5.25L0 5.25L0 0Z" transform="translate(8.5477 -3.7575498E-13)" id="矩形" fill="#058AA7" fill-rule="evenodd" stroke="none" />
+                  <path d="M0 0L5.25 0L5.25 5.25L0 5.25L0 0Z" transform="translate(17.135859 0)" id="矩形" fill="#058AA7" fill-rule="evenodd" stroke="none" />
+                  <path d="M0 0L5.25 0L5.25 5.25L0 5.25L0 0Z" transform="translate(-3.7575498E-13 8.5477)" id="矩形" fill="#058AA7" fill-rule="evenodd" stroke="none" />
+                  <path d="M0 0L5.25 0L5.25 5.25L0 5.25L0 0Z" transform="translate(8.5477 8.5477)" id="矩形" fill="#058AA7" fill-rule="evenodd" stroke="none" />
+                  <path d="M0 0L5.25 0L5.25 5.25L0 5.25L0 0Z" transform="translate(17.135859 8.5477)" id="矩形" fill="#058AA7" fill-rule="evenodd" stroke="none" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

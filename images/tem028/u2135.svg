@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="91" viewBox="0 0 86 91">
+  <defs>
+    <image id="image" width="18" height="37" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAlCAYAAABPsblCAAAABHNCSVQICAgIfAhkiAAAA4hJREFUSEudlnvI31Mcx1+/ndhcM8zmrraYB2s7SZHm1pYPIsNc9sekbWpMu0gyxdxKksj9zh9i04z0nGGRKfZgRxr+cZuxROQurI9H73XO4+tpz35fz6lffX/f7zmv8/l8zufz/pxOf38/dYSU9wF2BnYBLgImArsDI4DfgO+A1cDrwCi3+EVd26mgkPLewIICmQKcPLDDfx/+Bu4Ffgb63OIL+twE3QfMAGRVm/FjsXS6W+zbCgopjwG+bbN6G3N63eLpFTS1+D0c1ia3eHAFTQNeHg4F+BIYAJ0JPD8E6AdAAd4R2G0bc/R9/2rRhcBTZdLXwDPAK8BHgP4rR3YAJgCTgDOAmWX+H8ABFTQPeAC4BVjmFv/q5mZI+XDgTWCPpkULgTuA2W7xyW6QRgL/WvJufLXoCuBO4E+3OKoNKKRsQG+Z21NB1wBLS3nMdYsPd4OFlBNwHODASRV0P3A08DhwlVs8aHugkPKBwLpSCS8BVkEPAucBxwBrClDFegSwX4FuATYC75Y63BW4DHhHRlTQXcCl5dROK8Bu3i0HVP2LNL+CngWOd4vjQso3Atd2owDT3OKakPL38qaCFNwT3eKEkPKtilML0DlucWVI+Svg4mawp7rFnpDybcCVLUDnu8XlIeVPFKsKekgBc4tT/odrZ7vFVSHlTcC8CnoE6HGLx4aUFXgpZbcxwy0+F1LO8qAZozFu8ayQsiq9040CrHCLM0PKbwGLK0h1przQS1n3DTB2OzC5M7qogZRiaQVdB8xSZwDmAK+WXBoHXC7hAu4GPgQ+doufh5RfKwkqGXlisEKudYsnNC0JKe+r7HaL6we9r0X7nluMnRG965eUHRXgS9ziYy3is3VKSLk2xfkC3a5gAVvcouS09Qgp3wPM14Lq2g3A1cMAKbbXA0dW0CmAlLFPFpdTk6hLr3+StcBO5ST3AtQHJTW/AHsq/yrogmLiZkDPbcdNwKlNYVNfexRQqSxrSVkLfADMBUZWi3pKjtxcBO7QFjBdHsZL/Nxip4JGAkqsVSUms1uA3i5xekOl0ryNSOlUJocon1qAJH7afLNbfLoJmi5fi6h/VqBD8Ta4xUkhZR3/6oFrTclSibxipN9hwItDUKQOk8tNbqJbVJH/e9EqMLWZc0vPX1n63GCeOolOarRbXFE/Drg2qCDVhhSro8rOUoXfAQn9+8Cnzfuj1v4DGRid7uFzhy8AAAAASUVORK5CYII="/>
+  </defs>
+  <g id="组_27" data-name="组 27" transform="translate(-72.5 -183)">
+    <line id="形状_3" data-name="形状 3" y2="89" transform="translate(73 183)" fill="none" stroke="#04b3ce" stroke-width="1"/>
+    <line id="形状_3_拷贝_3" data-name="形状 3 拷贝 3" y2="10" transform="translate(95 224)" fill="none" stroke="#04b3ce" stroke-width="1"/>
+    <line id="形状_3_拷贝_4" data-name="形状 3 拷贝 4" y2="11" transform="translate(136 183)" fill="none" stroke="#04b3ce" stroke-width="1"/>
+    <g id="形状_4" data-name="形状 4" fill="none">
+      <path d="M135.939,247.007v15.586a3.576,3.576,0,0,1,2.064-.939,12.875,12.875,0,0,0-2.5,5.339,13.534,13.534,0,0,0-2.5-5.339,4.139,4.139,0,0,1,2.122.958v-15.6Z" stroke="none"/>
+      <path d="M 135.1192016601563 247.007080078125 L 135.9390869140625 247.007080078125 L 135.9390869140625 262.5927124023438 C 136.7512817382813 261.9862976074219 137.2808990478516 261.6843872070313 138.0030059814453 261.6535034179688 C 136.7582092285156 263.0328063964844 136.1100158691406 264.8259887695313 135.5005035400391 266.9927978515625 C 134.9165954589844 264.8259887695313 134.2039031982422 263.1117553710938 132.9969024658203 261.6535034179688 C 133.7814788818359 261.7464904785156 134.2554016113281 261.9979858398438 135.1192016601563 262.6116027832031 L 135.1192016601563 247.007080078125 Z" stroke="none" fill="#04b3ce"/>
+    </g>
+    <use id="轿车" transform="translate(85 185)" xlink:href="#image"/>
+    <use id="轿车_拷贝_2" data-name="轿车 拷贝 2" transform="translate(127 204)" xlink:href="#image"/>
+    <use id="轿车_拷贝" data-name="轿车 拷贝" transform="translate(85 237)" xlink:href="#image"/>
+    <line id="形状_3_拷贝" data-name="形状 3 拷贝" y2="89" transform="translate(158 183)" fill="none" stroke="#04b3ce" stroke-width="1"/>
+    <line id="形状_3_拷贝_2" data-name="形状 3 拷贝 2" y2="89" transform="translate(115 183)" fill="none" stroke="#04b3ce" stroke-width="1" stroke-dasharray="4 2"/>
+  </g>
+</svg>
